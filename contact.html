@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact Us - Bookkeeper Online</title>
+  <title>Contact - Bookkeeper Online</title>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
   <header>
-    <h1>Bookkeeper Online</h1>
     <nav>
+      <div class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="why-choose-us.html">Why Choose Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <h2>BookkeeperOnline.com</h2>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="why-choose-us.html">Why Choose Us</a>
+          <a href="contact.html">Contact</a>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-  <section id="contact">
+  <section>
     <div class="container">
-      <h2>Contact Us</h2>
-      <p>Ready to streamline your business's financial management? Get in touch with our team today to discuss your bookkeeping needs.</p>
+      <h1 class="title">Contact Us</h1>
+      <p>Ready to streamline your bookkeeping processes and experience the benefits of professional online bookkeeping services? Reach out to us using the contact information below, and we will be happy to assist you.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="images/location.png" alt="Location icon">
+          <p>123 Main Street, Santiago, Chile</p>
+        </div>
+        <div class="contact-item">
+          <img src="images/email.png" alt="Email icon">
+          <p>info@bookkeeperonline.com</p>
+        </div>
+        <div class="contact-item">
+          <img src="images/phone.png" alt="Phone icon">
+          <p>+123 456 7890</p>
+        </div>
+      </div>
+      <p>Alternatively, you can fill out the form below, and we will get back to you as soon as possible:</p>
+      <form id="contact-form" action="submit-form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2023 Bookkeeper Online. All rights reserved.</p>
+    <h3>BookkeeperOnline.com &copy; 2023 - Grizzly Group - All rights reserved.</h3>
+    <h3><a href="contact.html">Contact Us</a></h3>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
     </div>
   </footer>
 </body>

@@ -22,7 +22,8 @@
   --paragraph-color-on-color: white;   /* Texto de párrafo en fondo de color */
   --paragraph-background-color: black;
   --nav-link-color: white;
-  --nav-background-color: #FE4F19;
+/*  --nav-background-color: #FE4F19;*/
+  --nav-background-color: #8D0801;
   --nav-hover-link-color: black;
   --nav-hover-background-color: #F00C18;
 }
@@ -32,9 +33,7 @@ head {
 }
 
 header {
-/*  background-color: var(--nav-background-color);*/
   color: var(--nav-link-color);
-/*  padding: 20px;*/
   position: absolute;
   z-index: 100;
 }
@@ -44,23 +43,39 @@ body {
   margin: 0;
   padding: 0;
   display: block;
-/*  margin: 8px;*/
 }
 
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
   color: var(--primary-color);
 }
 
-footer {
+
+footer{
   background-color: var(--nav-background-color);
   color: var(--nav-link-color);
-  text-align: center;
-  padding: 20px;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
+footer a{
+  color: var(--paragraph-color-on-color);
+  text-decoration: none;
+}
+footer a:hover{
+  color: var(--primary-alt-color);
+}
+footer h3{
+  color: var(--paragraph-color-on-color);
+}
+footer h3 a:hover{
+  text-decoration: underline;
+}
+footer .social img{
+  padding-top: 15px;
+}
 footer p {
   margin: 0;
 }
@@ -71,6 +86,18 @@ div {
 
 html {
   display: block;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  font-size: 1.5em;
 }
 
 p {
@@ -89,12 +116,13 @@ nav ul{
   justify-content: space-around;
   background-color: var(--nav-background-color);
   color: var(--nav-link-color);
+  margin: 0%;
 }
 nav ul a{
   text-align: center;
   color: var(--primary-alt-color);
   text-decoration: none;
-  padding: 35px;
+  padding: 25px;
 }
 nav ul a:hover{
   background-color:var(--primary-color);
@@ -105,11 +133,9 @@ nav ul a:hover{
 .navbar {
   overflow: hidden;
   background-color: var(--nav-background-color);
-/*  background-color:  var(--accent1-color);*/
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-/*  max-width: 1600px;*/
   justify-content: space-around;
   text-align: center;
   color: var(--primary-alt-color);
@@ -118,11 +144,9 @@ nav ul a:hover{
 
 /* Links inside the navbar */
 .navbar a {
-/*  float: left;*/
   text-decoration: none;
   text-align: center;
   color: var(--primary-alt-color);
-/*  padding: 0px 35px;*/
   justify-self: center;
   height: 100%;
 }
@@ -145,104 +169,18 @@ nav ul a:hover{
 
 /* Fin Barra de menu */
 
-/* The navigation bar */
-
-/*
-.navbar {
-  overflow: hidden;
-  background-color:  var(--accent1-color);
-  position: fixed; /* Set the navbar to fixed position */
-/*
-  top: 0; /* Position the navbar at the top of the page */
-/*
-  width: 100%; /* Full width */
-/*
-  max-width: 1600px;
-  justify-content: space-around;
-  text-align: center;
-  color: var(--primary-alt-color);
-  text-decoration: none;
-}
-
-/* Links inside the navbar */
-/*
-.navbar a {
-  float: left;
-  text-decoration: none;
-  text-align: center;
-  color: var(--primary-alt-color);
-  text-decoration: none;
-  padding: 0px 35px;
-  justify-self: center;
-  height: 100%;
-}
-.navbar nav{
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--nav-background-color);
-  color: var(--nav-link-color);
-}
-.navbar nav a{
-  text-align: center;
-  color: var(--primary-alt-color);
-  text-decoration: none;
-  padding: 35px;
-}
-.navbar nav a:hover{
-  background-color:var(--primary-color);
-  color: var(--secondary-alt-color);
-}
-*/
-
-/*
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: var(--nav-link-color);
-  text-decoration: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 40px; /* Ajusta el valor según la separación deseada */
-/*
-}
-
-nav ul li a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-*/
-
 /* Clases */
 
 .bgimg-1 {
-  background-image: url(../images/team.jpg);
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url(../images/trabajando.jpg);
-  min-height: 30%;
-  max-height: 50%;
+  min-height: 60%;
+  max-height: 80%;
 }
 
-.bgimg-3 {
-  background-image: url(../images/mujer.jpg);
-  min-height: 30%;
-  max-height: 50%;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2 {
   position: relative;
   opacity: 0.65;
   background-position: center;
@@ -276,123 +214,156 @@ nav ul li a:hover {
   letter-spacing: 10px;
 }
 
-.parrafo{
-  color: var(--secondary-color);
-  background-color: var(--nav-hover-background-color);
-  text-align: center;
-  padding: 50px 80px;
+.parrafo-gris{
+  padding: 1% 20% 1% 20%;
   text-align: justify;
-  margin: 2% 20% 2% 20%;
-  box-shadow: 5px 5px 10px var(--shadow-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
+.parrafo-blanco{
+  padding: 1% 20% 1% 20%;
+  text-align: justify;
+  color: var(--paragraph-color-on-white);
+  background-color: var(--paragraph-color-on-color);
+}
+
+.imagen1{
+  padding: 10% 20% 10% 20%;
+  text-align: justify;
+  color: var(--paragraph-color-on-color);
+  max-height: 50%;
+  position: relative;
+  opacity: 0.65;
+  z-index: 10;
+  height: 50%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top{
+  margin-top: 3%;
+}
+
+.bottom{
+  margin-bottom: 3%;
+}
+
+.title{
+  padding-top: 5%;
+}
 /* IDs */
 
+#listOS ul{
+  list-style: none;
+  display: inline;
+}
 
-
-/*
-section {
-  padding: 50px 0;
+#listaOS li{
+  display: table-cell;
   text-align: center;
+  padding: 0 2em 4em 2em;
+  align-items: center;
 }
 
-section h2 {
-  margin-bottom: 20px;
+#listaOS img{
+  padding: 2em 2em 2em 2em;
 }
 
-section ul {
+/* Contact us*/
+
+form {
+  /* Center the form on the page */
+  margin: 5em auto;
+  width: 800px;
+   /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  font-family: var(--heading-font);
+}
+
+ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-/* Clases */
-/*
-.container {
-  margin: 0 auto;
-  padding: 20px;
-/*  display: grid;
-  grid-column: 1/11;*/
-/*
+form li + li {
+  margin-top: 1em;
 }
 
-.content{
-  grid-column: 2/7;
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
 }
 
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 700px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
 }
 
-.join {
-  background-color: var(--secondary-color);
-  color: var(--primary-alt-color);
-  text-decoration: none;
-  font-size: 18px;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border-radius: 5px;
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
 }
 
-.join:hover {
-  background-color: var(--accent2-color);
-  color: var(--secondary-alt-color);
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
 }
 
-.msg {
-  background-color: var(--primary-color);
-  padding: 35px;
-  margin-right: 50px;
-/*  grid-column: 7/10;
-  grid-row: 6/7;*/
-/*
-  box-shadow: 5px 5px 10px var(--shadow-color);
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+  font-family: var(--heading-font);
+  text-align: right;
 }
 
-.msg h2 {
-  color: var(--primary-alt-color);
-  line-height: 1.5em;
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+  font-family: var(--heading-font);
+  text-align: center;
+  font-size: large;
 }
 
-.msg p {
-  color: var(--primary-alt-color);
-  font-size: 0.8em;
-  padding-bottom: 15px;
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
 }
 
-.team {
-  width: 100%;
- grid-column: 4/7;
-/*  grid-row: 5/8; */
-/*
-box-shadow: 5px 5px 10px var(--shadow-color);
-  margin: 50px 50px 50px 50px;
+#contact{
+  margin-top: 10%;
 }
 
-/* IDs */
-
-/*#about {
-  display: grid;
-  grid-column: 1/11;
-}*/
-/*
-
-#background {
-  height: 725px;
-  background-color: var(--accent2-color);
-/*  grid-column: 1/11;
-  grid-row: 4/9;*/
-/*
-}
-
-/*#group1 {
-  grid-column: 2/4;
-  grid-row: 2/3;
-}
-
-#group2 {
-  grid-column: 5/7;
-  grid-row: 4/5;
-}*/
-
+/* End Contact us */
 
