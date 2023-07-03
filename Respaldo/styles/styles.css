@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Montserrat:wght@300&display=swap');
+
+:root {
+  --primary-color: #333;   /* Color primario - tono oscuro */
+  --secondary-color: #FFF; /* Color secundario - blanco */
+  --accent-color: #19A5FF; /* Color de acento - tono azul */
+  --text-color: #555;      /* Color de texto - tono gris oscuro */
+  --background-color: #F5F5F5; /* Color de fondo - tono gris claro */
+  --shadow-color: #666;    /* Color de sombra - tono gris medio */
+  
+
+  /* Cambia los valores a las fuentes elegidas */
+  --heading-font: Merienda, Tahoma, "Times New Roman";
+  --paragraph-font: Montserrat, Helvetica, sans-serif;
+
+  /* Estos colores deben ser elegidos de tu paleta */
+  --headline-color-on-white: black;    /* Títulos en fondo blanco */
+  --headline-color-on-color: white;    /* Títulos en fondo de color */
+  --paragraph-color-on-white: black;   /* Texto de párrafo en fondo blanco */
+  --paragraph-color-on-color: white;   /* Texto de párrafo en fondo de color */
+  --paragraph-background-color: black;
+  --nav-link-color: white;
+/*  --nav-background-color: #FE4F19;*/
+  --nav-background-color: #8D0801;
+  --nav-hover-link-color: black;
+  --nav-hover-background-color: #F00C18;
+}
+
+head {
+  display: none;
+}
+
+header {
+  color: var(--nav-link-color);
+  position: absolute;
+  z-index: 100;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+
+footer{
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a{
+  color: var(--paragraph-color-on-color);
+  text-decoration: none;
+}
+footer a:hover{
+  color: var(--primary-alt-color);
+}
+footer h3{
+  color: var(--paragraph-color-on-color);
+}
+footer h3 a:hover{
+  text-decoration: underline;
+}
+footer .social img{
+  padding-top: 15px;
+}
+footer p {
+  margin: 0;
+}
+
+div {
+  display: block;
+}
+
+html {
+  display: block;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+p {
+  font-family: var(--paragraph-font);
+}
+
+
+/* Barra de menu */
+
+nav{
+  background-color: var(--nav-background-color);
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  margin: 0%;
+}
+nav ul a{
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+  padding: 25px;
+}
+nav ul a:hover{
+  background-color:var(--primary-color);
+  color: var(--secondary-alt-color);
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: var(--nav-background-color);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  justify-content: space-around;
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-alt-color);
+  justify-self: center;
+  height: 100%;
+}
+.navbar nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+}
+.navbar nav a{
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+/*  padding: 35px;*/
+}
+.navbar nav a:hover{
+  background-color:var(--primary-color);
+  color: var(--secondary-alt-color);
+}
+
+/* Fin Barra de menu */
+
+/* Clases */
+
+.bgimg-1 {
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  min-height: 60%;
+  max-height: 80%;
+}
+
+.bgimg-1, .bgimg-2 {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: var(--paragraph-background-color);
+  color: var(--headline-color-on-color);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.parrafo-gris{
+  padding: 1% 20% 1% 20%;
+  text-align: justify;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.parrafo-blanco{
+  padding: 1% 20% 1% 20%;
+  text-align: justify;
+  color: var(--paragraph-color-on-white);
+  background-color: var(--paragraph-color-on-color);
+}
+
+.imagen1{
+  padding: 10% 20% 10% 20%;
+  text-align: justify;
+  color: var(--paragraph-color-on-color);
+  max-height: 50%;
+  position: relative;
+  opacity: 0.65;
+  z-index: 10;
+  height: 50%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top{
+  margin-top: 3%;
+}
+
+.bottom{
+  margin-bottom: 3%;
+}
+
+.title{
+  padding-top: 5%;
+}
+/* IDs */
+
+#listOS ul{
+  list-style: none;
+  display: inline;
+}
+
+#listaOS li{
+  display: table-cell;
+  text-align: center;
+  padding: 0 2em 4em 2em;
+  align-items: center;
+}
+
+#listaOS img{
+  padding: 2em 2em 2em 2em;
+}
+
+/* Contact us*/
+
+form {
+  /* Center the form on the page */
+  margin: 5em auto;
+  width: 800px;
+   /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  font-family: var(--heading-font);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 700px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+  font-family: var(--heading-font);
+  text-align: right;
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+  font-family: var(--heading-font);
+  text-align: center;
+  font-size: large;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+#contact{
+  margin-top: 10%;
+}
+
+/* End Contact us */
+

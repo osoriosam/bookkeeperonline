@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Montserrat:wght@300&display=swap');
+
+:root {
+  --primary-color: #333;   /* Color primario - tono oscuro */
+  --secondary-color: #FFF; /* Color secundario - blanco */
+  --accent-color: #19A5FF; /* Color de acento - tono azul */
+  --text-color: #555;      /* Color de texto - tono gris oscuro */
+  --background-color: #F5F5F5; /* Color de fondo - tono gris claro */
+  --shadow-color: #666;    /* Color de sombra - tono gris medio */
+  
+
+  /* Cambia los valores a las fuentes elegidas */
+  --heading-font: Merienda, Tahoma, "Times New Roman";
+  --paragraph-font: Montserrat, Helvetica, sans-serif;
+
+  /* Estos colores deben ser elegidos de tu paleta */
+  --headline-color-on-white: black;    /* Títulos en fondo blanco */
+  --headline-color-on-color: white;    /* Títulos en fondo de color */
+  --paragraph-color-on-white: black;   /* Texto de párrafo en fondo blanco */
+  --paragraph-color-on-color: white;   /* Texto de párrafo en fondo de color */
+  --paragraph-background-color: black;
+  --nav-link-color: white;
+/*  --nav-background-color: #FE4F19;*/
+  --nav-background-color: #8D0801;
+  --nav-hover-link-color: black;
+  --nav-hover-background-color: #F00C18;
+}
+
+head {
+  display: none;
+}
+
+header {
+/*  background-color: var(--nav-background-color);*/
+  color: var(--nav-link-color);
+/*  padding: 20px;*/
+  position: absolute;
+  z-index: 100;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  display: block;
+/*  margin: 8px;*/
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+/*  font: 400 15px/1.8 "Lato", sans-serif;*/
+  color: var(--primary-color);
+}
+
+
+footer{
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  padding: 25px 50px;
+/*  margin-top: 200px;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a{
+  color: var(--paragraph-color-on-color);
+  text-decoration: none;
+}
+footer a:hover{
+  color: var(--primary-alt-color);
+}
+footer h3{
+  color: var(--paragraph-color-on-color);
+}
+footer h3 a:hover{
+  text-decoration: underline;
+}
+footer .social img{
+  padding-top: 15px;
+}
+footer p {
+  margin: 0;
+}
+
+/*
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+*/
+div {
+  display: block;
+}
+
+html {
+  display: block;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+p {
+  font-family: var(--paragraph-font);
+}
+
+
+/* Barra de menu */
+
+nav{
+  background-color: var(--nav-background-color);
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  margin: 0%;
+}
+nav ul a{
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+  padding: 25px;
+}
+nav ul a:hover{
+  background-color:var(--primary-color);
+  color: var(--secondary-alt-color);
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: var(--nav-background-color);
+/*  background-color:  var(--accent1-color);*/
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+/*  max-width: 1600px;*/
+  justify-content: space-around;
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+}
+
+/* Links inside the navbar */
+.navbar a {
+/*  float: left;*/
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-alt-color);
+/*  padding: 0px 35px;*/
+  justify-self: center;
+  height: 100%;
+}
+.navbar nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+}
+.navbar nav a{
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+/*  padding: 35px;*/
+}
+.navbar nav a:hover{
+  background-color:var(--primary-color);
+  color: var(--secondary-alt-color);
+}
+
+/* Fin Barra de menu */
+
+/* The navigation bar */
+
+/*
+.navbar {
+  overflow: hidden;
+  background-color:  var(--accent1-color);
+  position: fixed; /* Set the navbar to fixed position */
+/*
+  top: 0; /* Position the navbar at the top of the page */
+/*
+  width: 100%; /* Full width */
+/*
+  max-width: 1600px;
+  justify-content: space-around;
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+}
+
+/* Links inside the navbar */
+/*
+.navbar a {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+  padding: 0px 35px;
+  justify-self: center;
+  height: 100%;
+}
+.navbar nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+}
+.navbar nav a{
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+  padding: 35px;
+}
+.navbar nav a:hover{
+  background-color:var(--primary-color);
+  color: var(--secondary-alt-color);
+}
+*/
+
+/*
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 40px; /* Ajusta el valor según la separación deseada */
+/*
+}
+
+nav ul li a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+*/
+
+/* Clases */
+
+.bgimg-1 {
+  background-image: url(../images/team.jpg);
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url(../images/trabajando.jpg);
+  min-height: 30%;
+  max-height: 50%;
+}
+
+.bgimg-3 {
+  background-image: url(../images/mujer.jpg);
+  min-height: 30%;
+  max-height: 50%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: var(--paragraph-background-color);
+  color: var(--headline-color-on-color);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.parrafo{
+  color: var(--secondary-color);
+  background-color: var(--nav-hover-background-color);
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+  margin: 2% 20% 2% 20%;
+  box-shadow: 5px 5px 10px var(--shadow-color);
+}
+
+/* IDs */
+
+
+
+
+
+/* Contact us*/
+
+form {
+  /* Center the form on the page */
+  margin: 5em auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  font-family: var(--heading-font);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+  font-family: var(--heading-font);
+  text-align: right;
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+  font-family: var(--heading-font);
+  text-align: center;
+  font-size: large;
+}
+
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+#contact{
+  margin-top: 10%;
+}
+
+
+/*
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Clases */
+/*
+.container {
+  margin: 0 auto;
+  padding: 20px;
+/*  display: grid;
+  grid-column: 1/11;*/
+/*
+}
+
+.content{
+  grid-column: 2/7;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.join {
+  background-color: var(--secondary-color);
+  color: var(--primary-alt-color);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.join:hover {
+  background-color: var(--accent2-color);
+  color: var(--secondary-alt-color);
+}
+
+.msg {
+  background-color: var(--primary-color);
+  padding: 35px;
+  margin-right: 50px;
+/*  grid-column: 7/10;
+  grid-row: 6/7;*/
+/*
+  box-shadow: 5px 5px 10px var(--shadow-color);
+}
+
+.msg h2 {
+  color: var(--primary-alt-color);
+  line-height: 1.5em;
+}
+
+.msg p {
+  color: var(--primary-alt-color);
+  font-size: 0.8em;
+  padding-bottom: 15px;
+}
+
+.team {
+  width: 100%;
+ grid-column: 4/7;
+/*  grid-row: 5/8; */
+/*
+box-shadow: 5px 5px 10px var(--shadow-color);
+  margin: 50px 50px 50px 50px;
+}
+
+/* IDs */
+
+/*#about {
+  display: grid;
+  grid-column: 1/11;
+}*/
+/*
+
+#background {
+  height: 725px;
+  background-color: var(--accent2-color);
+/*  grid-column: 1/11;
+  grid-row: 4/9;*/
+/*
+}
+
+/*#group1 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+#group2 {
+  grid-column: 5/7;
+  grid-row: 4/5;
+}*/
+
+
