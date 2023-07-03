@@ -214,21 +214,24 @@ nav ul a:hover{
   letter-spacing: 10px;
 }
 
-.parrafo-gris{
-  padding: 1% 20% 1% 20%;
+.parrafo-blanco, .parrafo-gris{
+  padding: 1% 10% 1% 10%;
   text-align: justify;
+  margin: 0 15em 0 15em;
+}
+
+.parrafo-gris{
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
 
 .parrafo-blanco{
-  padding: 1% 20% 1% 20%;
-  text-align: justify;
   color: var(--paragraph-color-on-white);
   background-color: var(--paragraph-color-on-color);
 }
 
 .imagen1{
+  margin: 0 15em 0 15em;
   padding: 10% 20% 10% 20%;
   text-align: justify;
   color: var(--paragraph-color-on-color);
