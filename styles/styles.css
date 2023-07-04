@@ -118,12 +118,14 @@ nav ul{
   color: var(--nav-link-color);
   margin: 0%;
 }
+
 nav ul a{
   text-align: center;
   color: var(--primary-alt-color);
   text-decoration: none;
   padding: 25px;
 }
+
 nav ul a:hover{
   background-color:var(--primary-color);
   color: var(--secondary-alt-color);
@@ -160,7 +162,6 @@ nav ul a:hover{
   text-align: center;
   color: var(--primary-alt-color);
   text-decoration: none;
-/*  padding: 35px;*/
 }
 .navbar nav a:hover{
   background-color:var(--primary-color);
@@ -268,12 +269,12 @@ nav ul a:hover{
 #listaOS li{
   display: table-cell;
   text-align: center;
-  padding: 0 2em 4em 2em;
+  padding: 0 2em 3em 2em;
   align-items: center;
 }
 
 #listaOS img{
-  padding: 2em 2em 2em 2em;
+  padding: 2em 1.5em 2em 1.5em;
 }
 
 /* Contact us*/
