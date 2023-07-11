@@ -6,18 +6,14 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div class="navbar">
-        <ul>
-          <h2>BookkeeperOnline.com</h2>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="why-choose-us.html">Why Choose Us</a>
-          <a href="contact.html">Contact</a>
-        </ul>
-      </nav>
-    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="why-choose-us.html">Why Choose Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>  
   </header>
 
   <section id="services">
@@ -25,29 +21,39 @@
       <h1 class="title">Our Services</h1>
       <ul id="listaOS">
         <li>
-          <img src="images/Payable.png" alt="AP image">
-          <h2>Weekly Accounts Payable (AP) processing</h2>
-          <p>We manage your vendor invoices and ensure timely payments. By maintaining accurate records of your payables, we help you avoid late fees and maintain strong relationships with your suppliers.</p>
+          <img src="images/Payable.png" alt="AP image" class="icon1">
+            <div>
+              <h2>Weekly Accounts Payable (AP) processing</h2>
+              <p>We manage your vendor invoices and ensure timely payments. By maintaining accurate records of your payables, we help you avoid late fees and maintain strong relationships with your suppliers.</p>
+            </div>
         </li>
         <li>
-          <img src="images/Receivables.png" alt="AR image">
-          <h2>Weekly Accounts Receivable (AR) processing</h2>
-          <p>We handle your customer invoices and track incoming payments. By efficiently managing your receivables, we help you maintain a healthy cash flow and improve your overall financial stability.</p>
+          <img src="images/Receivables.png" alt="AR image" class="icon1">
+            <div>
+              <h2>Weekly Accounts Receivable (AR) processing</h2>
+              <p>We handle your customer invoices and track incoming payments. By efficiently managing your receivables, we help you maintain a healthy cash flow and improve your overall financial stability.</p>
+            </div>
+            </li>
+        <li>
+          <img src="images/Bank.png" alt="bank image" class="icon1">
+            <div>
+              <h2>Weekly Bank Reconciliation</h2>
+              <p>We reconcile your bank statements with your financial records to ensure accuracy. By identifying any discrepancies or errors, we help you detect fraudulent activities and maintain the integrity of your financial data.</p>
+            </div>
         </li>
         <li>
-          <img src="images/Bank.png" alt="bank image">
-          <h2>Weekly Bank Reconciliation</h2>
-          <p>We reconcile your bank statements with your financial records to ensure accuracy. By identifying any discrepancies or errors, we help you detect fraudulent activities and maintain the integrity of your financial data.</p>
+          <img src="images/Accounts.png" alt="acc reconciliation" class="icon1">
+          <div>
+            <h2>Weekly Account Reconciliations</h2>
+            <p>We reconcile various accounts, such as credit cards and loans, to maintain accurate financial statements. By ensuring that all your accounts are properly reconciled, we provide you with a clear and comprehensive view of your business's financial health.</p>
+          </div>
         </li>
         <li>
-          <img src="images/Accounts.png" alt="acc reconciliation">
-          <h2>Weekly Account Reconciliations</h2>
-          <p>We reconcile various accounts, such as credit cards and loans, to maintain accurate financial statements. By ensuring that all your accounts are properly reconciled, we provide you with a clear and comprehensive view of your business's financial health.</p>
-        </li>
-        <li>
-          <img src="images/payroll.png" alt="payroll image">
-          <h2>Biweekly Payroll Services</h2>
-          <p>We process your employee payroll, including calculations, deductions, and tax filings. By accurately managing your payroll, we help you comply with tax regulations and ensure your employees are paid correctly and on time.</p>
+          <img src="images/payroll.png" alt="payroll image" class="icon1">
+          <div>
+            <h2>Biweekly Payroll Services</h2>
+            <p>We process your employee payroll, including calculations, deductions, and tax filings. By accurately managing your payroll, we help you comply with tax regulations and ensure your employees are paid correctly and on time.</p>
+          </div>
         </li>
       </ul>
     </div>
@@ -92,5 +98,6 @@
         </a>
     </div>
   </footer>
+  <script src="scripts/navbar.js"></script>
 </body>
 </html>

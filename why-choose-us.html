@@ -6,18 +6,14 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div class="navbar">
-        <ul>
-          <h2>BookkeeperOnline.com</h2>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="why-choose-us.html">Why Choose Us</a>
-          <a href="contact.html">Contact</a>
-        </ul>
-      </nav>
-    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="why-choose-us.html">Why Choose Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>  
   </header>
 
   <section id="why-choose-us">
@@ -28,34 +24,46 @@
       </div>
       <ul id="listaOS">
         <li>
-          <img src="images/experience.png" alt="AP image">
-          <h2>Expertise and Experience</h2>
-          <p>Our team of experienced bookkeepers has extensive knowledge of accounting practices and industry-specific requirements. We stay updated with the latest trends and regulations to ensure accurate and compliant financial management for your business.</p>
+          <img src="images/experience.png" alt="AP image" class="icon1">
+          <div>
+            <h2>Expertise and Experience</h2>
+            <p>Our team of experienced bookkeepers has extensive knowledge of accounting practices and industry-specific requirements. We stay updated with the latest trends and regulations to ensure accurate and compliant financial management for your business.</p>
+          </div>
         </li>
         <li>
-          <img src="images/custom.png" alt="AP image">
-          <h2>Personalized Service</h2>
-          <p>We understand that every business has unique needs. That's why we provide personalized accounting solutions tailored to your specific requirements. Our team takes the time to understand your business goals and challenges to offer customized support and insights.</p>
+          <img src="images/custom.png" alt="AP image" class="icon1">
+          <div>
+            <h2>Personalized Service</h2>
+            <p>We understand that every business has unique needs. That's why we provide personalized accounting solutions tailored to your specific requirements. Our team takes the time to understand your business goals and challenges to offer customized support and insights.</p>
+        </div>
         </li>
         <li>
-          <img src="images/timelines.png" alt="AP image">
-          <h2>Reliability and Timeliness</h2>
-          <p>Timely financial management is crucial for businesses. At Bookkeeper Online, we prioritize accuracy and timely delivery of our services. You can rely on us to handle your accounting tasks efficiently, ensuring that your financial records are up to date and accurate.</p>
+          <img src="images/timelines.png" alt="AP image" class="icon1">
+          <div>
+            <h2>Reliability and Timeliness</h2>
+            <p>Timely financial management is crucial for businesses. At Bookkeeper Online, we prioritize accuracy and timely delivery of our services. You can rely on us to handle your accounting tasks efficiently, ensuring that your financial records are up to date and accurate.</p>
+          </div>
+          </li>
+        <li>
+          <img src="images/cost.png" alt="AP image" class="icon1">
+          <div>
+            <h2>Cost-Effective Solution</h2>
+            <p>Outsourcing your accounting functions to Bookkeeper Online can result in significant cost savings for your business. By eliminating the need for in-house bookkeeping staff and investing in accounting software and infrastructure, you can reduce overhead costs and focus on core business activities.</p>
+          </div>
         </li>
         <li>
-          <img src="images/cost.png" alt="AP image">
-          <h2>Cost-Effective Solution</h2>
-          <p>Outsourcing your accounting functions to Bookkeeper Online can result in significant cost savings for your business. By eliminating the need for in-house bookkeeping staff and investing in accounting software and infrastructure, you can reduce overhead costs and focus on core business activities.</p>
-        </li>
+          <img src="images/security.png" alt="AP image" class="icon1">
+          <div>
+            <h2>Data Security and Confidentiality</h2>
+            <p>We understand the importance of data security and confidentiality. Our online platform utilizes advanced security measures to protect your financial data. We adhere to strict privacy policies and industry standards to ensure that your sensitive information remains secure.</p>
+          </div>
+          </li>
         <li>
-          <img src="images/security.png" alt="AP image">
-          <h2>Data Security and Confidentiality</h2>
-          <p>We understand the importance of data security and confidentiality. Our online platform utilizes advanced security measures to protect your financial data. We adhere to strict privacy policies and industry standards to ensure that your sensitive information remains secure.</p>
-        </li>
-        <li>
-          <img src="images/online.png" alt="AP image">
-          <h2>Convenience and Accessibility</h2>
-          <p>With our online accounting services, you can conveniently access your financial data anytime, anywhere. Our user-friendly platform allows you to review reports, track expenses, and collaborate with our team seamlessly. Say goodbye to the hassle of managing physical paperwork.</p>
+          <img src="images/online.png" alt="AP image" class="icon1">
+          <div>
+            <h2>Convenience and Accessibility</h2>
+            <p>With our online accounting services, you can conveniently access your financial data anytime, anywhere. Our user-friendly platform allows you to review reports, track expenses, and collaborate with our team seamlessly. Say goodbye to the hassle of managing physical paperwork.</p>
+          </div>
         </li>
       </ul>
       <div class="parrafo-gris">
@@ -79,5 +87,6 @@
         </a>
     </div>
   </footer>
+  <script src="scripts/navbar.js"></script>
 </body>
 </html>

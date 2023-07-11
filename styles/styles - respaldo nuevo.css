@@ -22,14 +22,11 @@
   --paragraph-color-on-color: white;   /* Texto de párrafo en fondo de color */
   --paragraph-background-color: black;
   --nav-link-color: white;
+/*  --nav-background-color: #FE4F19;*/
   --nav-background-color: #8D0801;
   --nav-hover-link-color: black;
   --nav-hover-background-color: #F00C18;
 }
-
-/* ################################################################# */
-/* END Selectores */
-/* ################################################################# */
 
 head {
   display: none;
@@ -107,13 +104,10 @@ p {
   font-family: var(--paragraph-font);
 }
 
-/* ################################################################# */
-/* END Selectores */
-/* ################################################################# */
-
-
 /* ################################################ */
+
 /* Clases */
+
 /* ################################################ */
 
 .bgimg-1 {
@@ -204,14 +198,10 @@ p {
   padding-top: 5%;
 }
 
-/* ################################################################# */
-/* END Clases */
-/* ################################################################# */
 
 
-/* ################################################################# */
+
 /* IDs */
-/* ################################################################# */
 
 #listOS ul{
   list-style: none;
@@ -229,14 +219,13 @@ p {
   padding: 2em 1.5em 2em 1.5em;
 }
 
-/* ################################################################# */
-/* End IDs */
-/* ################################################################# */
 
 
-/* ################################################################# */
-/* Contact us */
-/* ################################################################# */
+
+
+
+
+/* Contact us*/
 
 form {
   /* Center the form on the page */
@@ -328,14 +317,85 @@ button {
   margin-top: 10%;
 }
 
-/* ################################################################# */
 /* End Contact us */
-/* ################################################################# */
 
 
-/* ################################################################# */
+
+
+/* Barra de menu */
+/*
+nav{
+  background-color: var(--nav-background-color);
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  margin: 0%;
+}
+
+nav ul a{
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+  padding: 25px;
+}
+
+nav ul a:hover{
+  background-color:var(--primary-color);
+  color: var(--secondary-alt-color);
+}
+
+/* The navigation bar */
+/*
+.navbar {
+  overflow: hidden;
+  background-color: var(--nav-background-color);
+  position: fixed; /* Set the navbar to fixed position */
+/*  top: 0; /* Position the navbar at the top of the page */
+/*  width: 100%; /* Full width */
+/*  justify-content: space-around;
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+}
+
+/* Links inside the navbar */
+/*.navbar a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-alt-color);
+  justify-self: center;
+  height: 100%;
+}
+.navbar nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+}
+.navbar nav a{
+  text-align: center;
+  color: var(--primary-alt-color);
+  text-decoration: none;
+}
+.navbar nav a:hover{
+  background-color:var(--primary-color);
+  color: var(--secondary-alt-color);
+}
+
+/* Fin Barra de menu */
+
+
+
+
+
+
+
+
 /* Barra de menu responsive */
-/* ################################################################# */
 
 /* The navigation bar */
 .topnav {
@@ -450,31 +510,18 @@ button {
   display: block;
 }
 
-/* ################################################################# */
-/* END Barra de menu responsive */
-/* ################################################################# */
 
 
-/* ################################################################# */
-/* Mobile screen */
-/* ################################################################# */
+
+
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   h2{
     font-size: 1.1em;
   }
-  form{
-    width: 90%;
-  }
-  input, textarea{
-    width: 95%;
-  }
-  footer{
-    display: table-cell;
-    justify-items: center;
-  }
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -495,9 +542,6 @@ button {
   .icon1{
     width: 10em;
     height: 10em;
-  }
-  .social{
-    justify-items: center;
   }
   #listaOS img{
     padding: 5px 10px 5px 0;
@@ -535,7 +579,3 @@ button {
     text-align: left;
   }
 }
-
-/* ################################################################# */
-/* END Mobile screen */
-/* ################################################################# */
