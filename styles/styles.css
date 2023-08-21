@@ -461,6 +461,9 @@ button {
 
 /* When the screen is less than 900 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 900px) {
+  h1{
+    margin: 0 0 0 0;
+  }
   h2{
     font-size: 1.1em;
   }
@@ -471,9 +474,13 @@ button {
     width: 95%;
   }
   footer{
-    display: table-cell;
-    justify-items: center;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    display:block ;
+    justify-content: space-around;
   }
+
+  /* Clases */
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -484,39 +491,6 @@ button {
   .topnav{
     display: block;
   }
-  .parrafo-blanco, .parrafo-gris{
-    padding: 5px 10px 5px 10px;
-    margin: 0%;
-  }
-  .imagen1{
-    margin: 0 0 0 0;
-    height: 5em;
-  }
-  .icon1{
-    width: 10em;
-    height: 10em;
-  }
-  .social{
-    justify-items: center;
-  }
-  #listaOS img{
-    padding: 5px 10px 5px 0;
-  }
-  #listOS ul{
-    list-style: none;
-    display: inline;
-  }
-  #listaOS li{
-    display: inline-flex;
-    text-align: center;
-    padding: 0 2em 3em 2em;
-    align-items: center;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 900px) {
-/*  .topnav.responsive {position: relative;}*/
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -533,6 +507,70 @@ button {
     display: block;
     width: 100%;
     text-align: left;
+  }
+  .parrafo-blanco, .parrafo-gris{
+    padding: 5px 10px 5px 10px;
+    margin: 0%;
+  }
+  .imagen1{
+    margin: 0 0 0 0;
+    height: 5em;
+  }
+  .icon1{
+    width: 2em;
+    height: 2em;
+  }
+  .social{
+    align-items: center;
+    justify-content: space-around;
+  }
+  .title-index{
+    height: 4em;
+    padding: 3em 0 0 0;
+    background-image: url(../images/home-55.png); 
+    background-size: cover;
+  }
+  .title-about{
+    height: 4em;
+    padding: 3em 0 0 0;
+    background-image: url(../images/about-us-55.png); 
+    background-size: cover;
+  }
+  .title-service{
+    height: 4em;
+    padding: 3em 0 0 0;
+    background-image: url(../images/services-55.png); 
+    background-size: cover;
+  }
+  .title-why-choose-us{
+    height: 4em;
+    padding: 3em 0 0 0;
+    background-image: url(../images/why-choose-us-55.png); 
+    background-size: cover;
+  }
+  .title-contact{
+    height: 4em;
+    padding: 3em 0 0 0;
+    background-image: url(../images/contact-us-55.png); 
+    background-size: cover;
+  }
+  .fondo-title{
+    color:var(--primary-color);
+    }
+
+  /* IDs */
+  #listaOS img{
+    padding: 5px 10px 5px 0;
+  }
+  #listOS ul{
+    list-style: none;
+    display: inline;
+  }
+  #listaOS li{
+    display: inline-flex;
+    text-align: center;
+    padding: 0 2em 3em 2em;
+    align-items: center;
   }
 }
 
